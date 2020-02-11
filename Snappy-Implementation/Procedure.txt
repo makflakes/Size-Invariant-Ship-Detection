@@ -1,0 +1,10 @@
+**WARNING** This implementation will not work without the snappy module from ESA SNAP configured
+
+
+This set of programs runs in the following steps :
+
+-- ShipDetection.py is run first with the path in the program set to the extracted SAR folder. Results are stored in the folder itself.
+
+-- snap.py is run on the individual band results obtained from the ShipDetection.py execution. Snap.py gives us a visual result in the form of a .png file of the required band.
+
+-- ContourDrawing.py is run last. Src image is the path to the Sigma0_VH_ship_bit_msk band image, and the original band image path is set for drawing. 
